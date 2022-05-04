@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "5bce0057-5bc3-411e-9d37-8d10ebee4f1e",
+		"name": "express-mongodb-template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦事項",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://warm-beyond-12433.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"warm-beyond-12433",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增代辦事項",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"2\",\r\n    \"tags\": [\"123\"],\r\n    \"type\": \"group\",\r\n    \"image\": \"\",\r\n    \"content\": \"內容1\",\r\n    \"likes\": 10,\r\n    \"comments\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://warm-beyond-12433.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"warm-beyond-12433",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯指定代辦事項",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"15\",\r\n    \"tags\": [\"123\"],\r\n    \"type\": \"group\",\r\n    \"image\": \"\",\r\n    \"content\": \"內容1\",\r\n    \"likes\": 100,\r\n    \"comments\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://warm-beyond-12433.herokuapp.com/posts/{id}",
+					"protocol": "https",
+					"host": [
+						"warm-beyond-12433",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://warm-beyond-12433.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"warm-beyond-12433",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除指定代辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://warm-beyond-12433.herokuapp.com/posts/{id}",
+					"protocol": "https",
+					"host": [
+						"warm-beyond-12433",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得單一代辦事項",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://warm-beyond-12433.herokuapp.com/posts/{id}",
+					"protocol": "https",
+					"host": [
+						"warm-beyond-12433",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得所有代辦事項 Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/po",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"po"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
